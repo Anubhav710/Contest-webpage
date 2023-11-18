@@ -13,7 +13,7 @@ const viaodaLibre = Viaoda_Libre({ weight: ["400"], subsets: ["latin"] })
 export default function Home() {
   useEffect(() => {
     ;(async () => {
-      const LocomotiveScroll = (await import("locomotive-scroll")).default
+      const LocomotiveScroll: any = (await import("locomotive-scroll")).default
       const locomotiveScroll = new LocomotiveScroll()
     })()
   }, [])
