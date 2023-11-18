@@ -16,7 +16,7 @@ const EventContainer = () => {
           Red Velvet is a south korean girl group formed by SM entertainments in
           2014 and consists of five member, namely Irene, Seulgi, Wendy, Yeri
           and Joy. They started their career n August 1, 2014 with the release f
-          the digital single 'Happiness'
+          the digital single &apos;Happiness&apos;
         </p>
         <Button />
       </div>
@@ -35,7 +35,7 @@ const EventContainer = () => {
           Red Velvet is a south korean girl group formed by SM entertainments in
           2014 and consists of five member, namely Irene, Seulgi, Wendy, Yeri
           and Joy. They started their career n August 1, 2014 with the release f
-          the digital single 'Happiness'
+          the digital single &apos;Happiness&apos;
         </p>
         <Button />
       </div>
@@ -52,7 +52,7 @@ const EventContainer = () => {
           Red Velvet is a south korean girl group formed by SM entertainments in
           2014 and consists of five member, namely Irene, Seulgi, Wendy, Yeri
           and Joy. They started their career n August 1, 2014 with the release f
-          the digital single 'Happiness'
+          the digital single &apos;Happiness&apos;
         </p>
         <Button />
       </div>

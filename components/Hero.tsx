@@ -5,54 +5,21 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const Hero = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  }
-
-  const item = {
-    hidden: { opacity: 0, y: 90 },
-    show: { opacity: 1, y: 0, transition: { type: "smooth" } },
-  }
-  const image = {
-    hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { type: "smooth" } },
-  }
   return (
     <div className="w-full mt-28">
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true }}
-        variants={container}
-        className="flex flex-col items-center justify-center "
-      >
-        <motion.h1
-          variants={item}
-          className="text-white text-9xl pb-2 leading-snug max-lg:text-7xl max-md:text-5xl"
-        >
+      <div className="flex flex-col items-center justify-center ">
+        <motion.h1 className="text-white text-9xl pb-2 leading-snug max-lg:text-7xl max-md:text-5xl">
           Feel the Rhythm of{" "}
         </motion.h1>
-        <motion.h1
-          variants={item}
-          className="text-white text-9xl pb-2 leading-snug max-lg:text-7xl max-md:text-5xl"
-        >
+        <motion.h1 className="text-white text-9xl pb-2 leading-snug max-lg:text-7xl max-md:text-5xl">
           Your Hear&apos;s Music
         </motion.h1>
-        <motion.p
-          variants={item}
-          className="mt-4 text-center text-xl w-10/12 tracking-widest text-neutral-400  max-lg:text-base max-md:text-sm"
-        >
+        <motion.p className="mt-4 text-center text-xl w-10/12 tracking-widest text-neutral-400  max-lg:text-base max-md:text-sm">
           The biggest, extraordinary and spread out K-Pop music festival all
           around the world, in cooperation with all the famous k-pop industry
           agencies in korea and outstanding talents.
         </motion.p>
-      </motion.div>
+      </div>
       <div className="mt-28 text-white cursor-pointer">
         <div className="bg-black lg:h-[700px] md:h-[500px] h-[300px]     ">
           <div className="flex justify-between  bg-[url('/image4.webp')] -z-50 h-full opacity-50 bg-no-repeat bg-top bg-cover hover:opacity-95 transition-opacity duration-1000 px-4 py-1">

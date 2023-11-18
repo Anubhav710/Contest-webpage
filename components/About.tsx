@@ -5,7 +5,7 @@ import EventContainer from "./EventContainer"
 
 const About = () => {
   return (
-    <div className="mt-28">
+    <div className="mt-28" id="performance">
       <EventContainer />
       <hr className="w-full mt-16" />
     </div>

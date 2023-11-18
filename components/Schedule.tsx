@@ -64,7 +64,7 @@ const Schedule = () => {
   }
 
   return (
-    <div className="mt-28">
+    <div className="mt-28" id="schedule">
       <div className="flex flex-col space-y-14 ">
         <div className="text-center space-y-2">
           <h1 className="text-white md:text-4xl lg:text-6xl">Schedule</h1>
@@ -75,14 +75,13 @@ const Schedule = () => {
         </div>
         <div className="flex space-x-7 justify-center mt-4  ">
           {popSingers.map((item) => (
-            <div>
+            <div key={item.name}>
               <button
                 className={` hover:text-yellow-600 transition-all duration-150 text-3xl cursor-pointer ease-in ${
                   isActive === item.name
-                    ? "text-yellow-500"
+                    ? "text-yellow-500 scale-125"
                     : "text-neutral-500"
                 } `}
-                key={item.id}
                 onClick={() => setIsActive(item.name)}
               >
                 {item.name}
@@ -95,7 +94,10 @@ const Schedule = () => {
             {popSingers.map(
               (items) =>
                 items.name === isActive && (
-                  <div className="relative w-full h-[600px]  overflow-hidden ">
+                  <div
+                    className="relative w-full h-[600px]  overflow-hidden "
+                    key={items.name}
+                  >
                     <Image
                       src={items.img}
                       alt="image"
@@ -111,7 +113,10 @@ const Schedule = () => {
           <div className="flex justify-center items-center mt-24">
             <Button />
           </div>
-          <div className="cursor-pointer flex justify-center relative items-center md:mt-24 h-[500px] w-full overflow-hidden ">
+          <div
+            className="cursor-pointer flex justify-center relative items-center md:mt-24 h-[500px] w-full overflow-hidden "
+            id="booking"
+          >
             <Image
               src="/concert.png"
               alt="BookingPic"
